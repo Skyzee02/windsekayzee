@@ -20,12 +20,12 @@ local Window = Rayfield:CreateWindow({
    },
 
    Discord = {
-      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
-      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "incomming", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "Masukan Key",
       Subtitle = "Key System",
@@ -150,7 +150,7 @@ local function clearHighlight(model)
 end
 
 -- ========= ui =========
-local Window   = Rayfield:CreateWindow({Name="Violence District | Sekay Hub",LoadingTitle="Violence District",LoadingSubtitle="by Sekayzee",ConfigurationSaving={Enabled=true,FolderName="VD_Suite",FileName="vd_config"},KeySystem=false})
+local Window   = Rayfield:CreateWindow({Name="Violence District | Sekayzee",LoadingTitle="Violence District",LoadingSubtitle="by Sekayzee",ConfigurationSaving={Enabled=true,FolderName="VD_Suite",FileName="vd_config"},KeySystem=false})
 local TabPlayer= Window:CreateTab("Player")
 local TabESP   = Window:CreateTab("ESP")
 local TabWorld = Window:CreateTab("World")
